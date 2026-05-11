@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wireless Emergency Telemedicine System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-small">Wireless</span>
+        <span class="brand-highlight">Emergency</span>
+        <span class="brand-small">Telemedicine</span>
+        <span class="brand-small">System</span>
+      </div>
+      <div class="logo-panel">
+        <div class="logo-badge">
+          <div class="logo-text">we</div>
+          <div class="logo-heart">care</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="controls-panel">
+      <form class="search-form" action="#" method="get" onsubmit="return false;">
+        <label class="search-label" for="filter">Search by :</label>
+        <select id="filter" name="filter">
+          <option value="name">Name</option>
+          <option value="id">Patient ID</option>
+          <option value="department">Department</option>
+        </select>
+        <input type="text" name="query" placeholder="ahmed" value="ahmed" />
+        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="button" class="btn btn-secondary">New patient</button>
+      </form>
+      <div class="action-panel">
+        <button type="button" class="btn btn-tertiary">Exit</button>
+        <button type="button" class="btn btn-tertiary">delete</button>
+      </div>
+    </section>
+
+    <div class="status-bar">patients found</div>
+
+    <section class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Patient ID</th>
+            <th>age</th>
+            <th>Patient Name</th>
+            <th>department</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>222</td>
+            <td>38</td>
+            <td>mahmoud maher</td>
+            <td>cardiac</td>
+          </tr>
+          <tr>
+            <td>223</td>
+            <td>32</td>
+            <td>hazem sayed</td>
+            <td>Orthopedics</td>
+          </tr>
+          <tr>
+            <td>224</td>
+            <td>44</td>
+            <td>mohamed kasem</td>
+            <td>internists</td>
+          </tr>
+          <tr>
+            <td>226</td>
+            <td>61</td>
+            <td>diaa ahmed</td>
+            <td>cardiac</td>
+          </tr>
+          <tr>
+            <td>318</td>
+            <td>25</td>
+            <td>mohsen hany</td>
+            <td>Orthopedics</td>
+          </tr>
+          <tr>
+            <td>319</td>
+            <td>32</td>
+            <td>haithm nabil</td>
+            <td>internists</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer class="app-footer">
+      Developed in EE Department, Faculty of Engineering, Assiut University
+    </footer>
+  </div>
+</body>
+</html>
