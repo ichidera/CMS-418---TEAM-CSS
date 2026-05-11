@@ -1,0 +1,186 @@
+/* Color Variables */
+:root {
+    --white: #FFFFFF;
+    --carton: #D7BE99;
+    --dark-brown: #3E2723;
+    --black: #121212;
+    --input-bg: #F9F4EE;
+}
+
+/* Base Reset to fit one window */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: var(--white);
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-brown);
+    color: var(--carton);
+    padding: 10px 40px;
+    height: 10vh;
+}
+
+.logo-box {
+    width: 60px;
+    height: 60px;
+    background-color: var(--carton);
+    color: var(--dark-brown);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.main-header h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Hero Section: 40% Quote, 60% Doctors */
+.hero-section {
+    display: grid;
+    grid-template-columns: 4fr 6fr; /* 40/60 Split */
+    height: 45vh;
+    border-bottom: 4px solid var(--carton);
+    overflow: hidden;
+}
+
+/* Login Section: 40% Stethoscope, 60% Form */
+.login-section {
+    display: grid;
+    grid-template-columns: 4fr 6fr; /* 40/60 Split */
+    height: 45vh;
+}
+
+.quote-box {
+    display: flex;
+    flex-direction: column; /* Allows us to stack the quote and any icons */
+    align-items: center;    /* Centers horizontally */
+    justify-content: center; /* Centers vertically */
+    text-align: center;      /* Centers the actual lines of text */
+    padding: 40px;           /* Prevents text from touching the edges */
+    background-color: var(--white);
+    color: var(--dark-brown);
+    height: 100%;           /* Ensures it takes up the full height of the grid row */
+}
+
+.quote {
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 1.4;
+    position: relative;
+}
+
+.quote::before {
+    content: '"';
+    font-size: 5rem;
+    position: absolute;
+    top: -40px;
+    left: -30px;
+    color: var(--carton);
+    opacity: 0.5;
+}
+
+.doctor-image img, 
+.side-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+}
+
+.side-visual img {
+    filter: sepia(30%) contrast(110%);
+}
+
+.login-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--carton);
+    padding: 20px; /* Added padding so the form doesn't hit the edges on smaller screens */
+}
+
+.login-form {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px; /* Reduced max-width slightly for a tighter, cleaner look */
+}
+
+.login-form h2 {
+    margin-bottom: 25px;
+    color: var(--dark-brown);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--input-bg);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--dark-brown);
+    color: var(--carton);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: var(--black);
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--dark-brown);
+}
+
+.signup-link a {
+    color: var(--dark-brown);
+    font-weight: bold;
+    text-decoration: underline;
+}
