@@ -30,16 +30,16 @@ This is the main doctor-facing monitoring screen. It shows:
 
 ```
 ichidera/
-├── README.md              ← this file
-├── index.html             ← Home Patient Monitoring screen (coming soon)
-└── style.css              ← stylesheet (coming soon)
+├── README.md     ← this file
+├── index.html    ← Home Patient Monitoring screen
+└── style.css     ← stylesheet
 ```
 
 ---
 
 ## Approach
 
-Modern 2026 HTML + CSS interpretation of the 2013 original — same layout intent and information hierarchy, but clean and readable. No frameworks, no JavaScript (static UI only).
+Modern 2026 HTML + CSS interpretation of the 2013 original — same layout intent and information hierarchy, cleaner typography, CSS custom properties, and accessible markup. No frameworks, no JavaScript (static UI only).
 
 
 ---
