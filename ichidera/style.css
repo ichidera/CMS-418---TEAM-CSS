@@ -1,10 +1,4 @@
-/* ============================================================
-   WETS — Home Patient Monitoring
-   CMS 418 · Rivers State University · Team CSS
-   Ichidera's screen: Figure 15 — Vital Signs Dashboard
-   ============================================================ */
-
-/* ─── Reset & base ──────────────────────────────────────────── */
+/* reset & base */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -52,7 +46,7 @@ body {
   line-height: 1.5;
 }
 
-/* ─── Site header ───────────────────────────────────────────── */
+/* header */
 .site-header {
   background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-light) 100%);
   display: flex;
@@ -88,7 +82,7 @@ body {
 .title-emergency { color: var(--red-light); }
 .title-rest      { color: #fff; }
 
-/* ─── Sub-header banner ─────────────────────────────────────── */
+/* sub-header */
 .sub-header {
   background: linear-gradient(to right, #d0e4f7, #a8c8e8);
   border-bottom: 2px solid #8ab4d8;
@@ -122,7 +116,7 @@ body {
   font-style: italic;
 }
 
-/* ─── Main navigation tabs ──────────────────────────────────── */
+/* nav */
 .main-nav {
   background: #3d5a80;
   display: flex;
@@ -162,7 +156,7 @@ body {
 
 .nav-icon { font-size: 0.85rem; }
 
-/* ─── Action bar ────────────────────────────────────────────── */
+/* action bar */
 .action-bar {
   background: var(--purple);
   display: flex;
@@ -193,7 +187,7 @@ body {
   background: rgba(255, 255, 255, 0.07);
 }
 
-/* ─── Main content grid ─────────────────────────────────────── */
+/* main content grid */
 .main-content {
   flex: 1;
   display: grid;
@@ -202,7 +196,7 @@ body {
   padding: 0.85rem 1rem 0;
 }
 
-/* ─── Left column ───────────────────────────────────────────── */
+/* left column */
 .left-col {
   display: flex;
   flex-direction: column;
@@ -285,7 +279,7 @@ body {
   display: block;
 }
 
-/* ─── Right column ──────────────────────────────────────────── */
+/* right column */
 .right-col {
   display: flex;
   flex-direction: column;
@@ -434,7 +428,7 @@ body {
   flex-shrink: 0;
 }
 
-/* ─── Controls bar ──────────────────────────────────────────── */
+/* controls bar */
 .controls-bar {
   display: flex;
   flex-wrap: wrap;
@@ -481,7 +475,7 @@ body {
 
 .ctrl-btn--primary:hover { background: var(--navy-light); }
 
-/* ─── Footer ────────────────────────────────────────────────── */
+/* footer */
 .site-footer {
   background: var(--navy-dark);
   color: #7aa0c4;
