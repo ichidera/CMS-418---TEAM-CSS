@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Vitals Monitor</title>
+<link rel="stylesheet" href="vitals.css"></head>
+  <body>
+
+<div class="app">
+
+  <!-- topbar -->
+  <div class="topbar">
+    <div class="topbar-left">
+      <div class="topbar-dot td-r"></div>
+      <div class="topbar-dot td-y"></div>
+      <div class="topbar-dot td-g"></div>
+      <span class="topbar-title">connect to patient</span>
+    </div>
+    <div class="topbar-right">
+      <div class="live-badge"><div class="live-dot"></div> LIVE</div>
+    </div>
+  </div>
+<!-- header -->
+  <div class="header">
+    <div>
+      <div class="brand-name"><span>Wireless</span> Emergency <span>Telemedicine</span> System</div>
+      <div class="brand-sub">WeCare Patient Monitoring Platform</div>
+    </div>
+    <div class="we-care">
+      <div class="wc-stars">★ ★ ★</div>
+      <div class="wc-we">we</div>
+      <div class="wc-care">care</div>
+    </div>
+  </div>
+
+  <!-- body -->
+  <div class="body">
+
+    <!-- left -->
+    <div class="left">
+      <div class="section-label">Patient Waveforms</div>
+
+      <div class="ecg-shell">
+        <div class="ecg-bar">
+          <span class="ecg-ch">ECG — Lead II</span>
+          <span class="ecg-hz">25 mm/s · 10 mm/mV</span>
+        </div>
+
+        <svg class="ecg-svg" viewBox="0 0 760 168" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <polyline
+            fill="none"
+            stroke="#60b8ff"
+            stroke-width="1.7"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            points="
+              0,94 18,94 22,91 26,94 34,84 37,37 40,107 43,94
+              58,94 62,91 66,94 70,94
+              88,94 92,91 96,94 104,84 107,37 110,107 113,94
+              128,94 132,91 136,94 140,94
+              158,94 162,91 166,94 174,84 177,37 180,107 183,94
+              198,94 202,91 206,94 210,94
+              228,94 232,91 236,94 244,84 247,37 250,107 253,94
+              268,94 272,91 276,94 280,94
+              298,94 302,91 306,94 314,84 317,37 320,107 323,94
+              338,94 342,91 346,94 350,94
+              368,94 372,91 376,94 384,84 387,37 390,107 393,94
+              408,94 412,91 416,94 420,94
+              438,94 442,91 446,94 454,84 457,37 460,107 463,94
+              478,94 482,91 486,94 490,94
+              508,94 512,91 516,94 524,84 527,37 530,107 533,94
+              548,94 552,91 556,94 560,94
+              578,94 582,91 586,94 594,84 597,37 600,107 603,94
+              618,94 622,91 626,94 630,94
+              648,94 652,91 656,94 664,84 667,37 670,107 673,94
+              688,94 692,91 696,94 760,94
+            "
+          />
+        </svg>
+      </div>
+
+      <div class="ctrl-row">
+        <div class="ctrl-btn">plot</div>
+        <div class="ctrl-btn">UDP</div>
+        <div class="ctrl-btn on">ON</div>
+        <div class="ctrl-btn off">OFF</div>
+      </div>
+    </div>
+
+    <!-- right -->
+    <div class="right">
+
+      <div>
+        <div class="section-label" style="margin-bottom:10px;">Vital Signs</div>
+
+        <div class="vitals-row vr-3" style="margin-bottom:7px;">
+          <div class="vcard">
+            <div class="vcard-lbl">Temperature (°C)</div>
+            <div class="vcard-val">37.0</div>
+            <div class="vcard-unit">degrees celsius</div>
+          </div>
+          <div class="vcard">
+            <div class="vcard-lbl">Heart Rate (bpm)</div>
+            <div class="vcard-val">60</div>
+            <div class="vcard-unit">beats / min</div>
+          </div>
+          <div class="vcard">
+            <div class="vcard-lbl">SpO₂ (%)</div>
+            <div class="vcard-val">95</div>
+            <div class="vcard-unit">oxygen saturation</div>
+          </div>
+        </div>
+
+        <div class="vitals-row vr-2">
+          <div class="vcard">
+            <div class="vcard-lbl">Blood Pressure (mmHg)</div>
+            <div class="vcard-val" style="font-size:21px;">107/61</div>
+            <div class="vcard-unit">systolic / diastolic</div>
+          </div>
+          <div class="vcard">
+            <div class="vcard-lbl">Respiration (breath/min)</div>
+            <div class="vcard-val">12</div>
+            <div class="vcard-unit">breaths / min</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- connect -->
+      <div class="connect-box">
+        <div class="conn-title">Connection</div>
+
+        <div class="f-row">
+          <span class="f-lbl">Connection Type</span>
+          <select class="f-select">
+            <option>patient name</option>
+            <option>patient ID</option>
+            <option>room number</option>
+          </select>
+          <button class="conn-btn">Connect</button>
+        </div>
+
+        <div class="f-row">
+          <span class="name-tag">Name</span>
+          <input class="f-input" type="text" value="osama elnahas" />
+        </div>
+
+        <div class="action-row">
+          <button class="act-btn">Save</button>
+          <button class="act-btn">Pause</button>
+          <button class="act-btn">Stop</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <span class="footer-txt">Developed in Computer science Department, Faculty of Science, RSU</span>
+  </div>
+
+</div>
+
+</body>
+</html>
