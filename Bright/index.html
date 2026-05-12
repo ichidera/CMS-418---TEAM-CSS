@@ -1,1 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WETS — Home Patient Monitoring</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-logo">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="22" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"/>
+        <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
+              fill="white" font-size="22">🏛</text>
+      </svg>
+    </div>
 
+    <div class="header-title">
+      <span class="title-wireless">Wireless</span>
+      <span class="title-emergency">Emergency</span>
+      <span class="title-rest">Telemedicine System</span>
+    </div>
+
+    <div class="header-logo header-logo--right">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="22" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+        <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
+              fill="white" font-size="20">🎓</text>
+      </svg>
+    </div>
+  </header>
+
+  
+  <div class="sub-header">
+    <div class="we-care-badge">
+      <span class="wc-we">we</span>
+      <span class="wc-care">care</span>
+    </div>
+    <h2 class="sub-header-title">Home Patient Monitoring</h2>
+  </div>
+
+  
+  <nav class="main-nav" role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav-tab nav-tab--active" aria-current="page">
+      <span class="nav-icon">📈</span> Vital Signs
+    </a>
+    <a href="#" class="nav-tab">
+      <span class="nav-icon">📊</span> Raw Data
+    </a>
+    <a href="#" class="nav-tab">
+      <span class="nav-icon">📝</span> Patient's Notes
+    </a>
+    <a href="#" class="nav-tab">
+      <span class="nav-icon">🗂</span> Medical Record
+    </a>
+    <a href="#" class="nav-tab">
+      <span class="nav-icon">👤</span> Personal Information
+    </a>
+    <a href="#" class="nav-tab">
+      <span class="nav-icon">🕐</span> Sessions
+    </a>
+    <a href="#" class="nav-tab nav-tab--home">
+      <span class="nav-icon">🏠</span> Home
+    </a>
+  </nav>
+
+
+  <div class="action-bar" role="toolbar" aria-label="Quick actions">
+    <a href="#" class="action-btn">➕ Add Consultation</a>
+    <a href="#" class="action-btn">💊 Add Drug Prescription</a>
+    <a href="#" class="action-btn">👁 Show Personal Info.</a>
+    <a href="#" class="action-btn">🧑‍⚕️ Add New Patient</a>
+    <a href="#" class="action-btn action-btn--search">🔍 Patient Search</a>
+  </div>
+
+  
+  <main class="main-content">
+
+    
+    <section class="left-col">
+
+      
+      <div class="patient-card">
+        <p class="card-eyebrow">Patient</p>
+        <dl class="patient-dl">
+          <div class="patient-dl__row">
+            <dt>Patient's MRN</dt>
+            <dd>08050852601333</dd>
+          </div>
+          <div class="patient-dl__row">
+            <dt>Monitoring Start Date</dt>
+            <dd>15-02-2013</dd>
+          </div>
+          <div class="patient-dl__row">
+            <dt>Current State</dt>
+            <dd><span class="badge badge--active">Active</span></dd>
+          </div>
+        </dl>
+      </div>
+
+      
+      <div class="ecg-card">
+        <p class="card-eyebrow">ECG Waveform</p>
+        <div class="ecg-display" role="img" aria-label="Live ECG waveform">
+          <svg
+            class="ecg-svg"
+            viewBox="0 0 720 110"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+          
+            <line x1="0"   y1="27.5" x2="720" y2="27.5" stroke="#1a4020" stroke-width="0.5"/>
+            <line x1="0"   y1="55"   x2="720" y2="55"   stroke="#1d5025" stroke-width="0.8"/>
+            <line x1="0"   y1="82.5" x2="720" y2="82.5" stroke="#1a4020" stroke-width="0.5"/>
+            <line x1="90"  y1="0" x2="90"  y2="110" stroke="#1a4020" stroke-width="0.5"/>
+            <line x1="180" y1="0" x2="180" y2="110" stroke="#1a4020" stroke-width="0.5"/>
+            <line x1="270" y1="0" x2="270" y2="110" stroke="#1a4020" stroke-width="0.5"/>
+            <line x1="360" y1="0" x2="360" y2="110" stroke="#1a4020" stroke-width="0.5"/>
+            <line x1="450" y1="0" x2="450" y2="110" stroke="#1a4020" stroke-width="0.5"/>
+            <line x1="540" y1="0" x2="540" y2="110" stroke="#1a4020" stroke-width="0.5"/>
+            <line x1="630" y1="0" x2="630" y2="110" stroke="#1a4020" stroke-width="0.5"/>
+
+            
+            <path
+              d="M 0,55 L 15,55 Q 22,43 30,43 Q 38,43 45,55
+                 L 56,55 L 60,63 L 65,4 L 70,69 L 76,55
+                 L 93,55 Q 100,40 108,40 Q 116,40 126,55 L 180,55
+                 L 195,55 Q 202,43 210,43 Q 218,43 225,55
+                 L 236,55 L 240,63 L 245,4 L 250,69 L 256,55
+                 L 273,55 Q 280,40 288,40 Q 296,40 306,55 L 360,55
+                 L 375,55 Q 382,43 390,43 Q 398,43 405,55
+                 L 416,55 L 420,63 L 425,4 L 430,69 L 436,55
+                 L 453,55 Q 460,40 468,40 Q 476,40 486,55 L 540,55
+                 L 555,55 Q 562,43 570,43 Q 578,43 585,55
+                 L 596,55 L 600,63 L 605,4 L 610,69 L 616,55
+                 L 633,55 Q 640,40 648,40 Q 656,40 666,55 L 720,55"
+              fill="none"
+              stroke="rgba(0,230,118,0.18)"
+              stroke-width="7"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+            />
+
+          
+            <path
+              d="M 0,55 L 15,55 Q 22,43 30,43 Q 38,43 45,55
+                 L 56,55 L 60,63 L 65,4 L 70,69 L 76,55
+                 L 93,55 Q 100,40 108,40 Q 116,40 126,55 L 180,55
+                 L 195,55 Q 202,43 210,43 Q 218,43 225,55
+                 L 236,55 L 240,63 L 245,4 L 250,69 L 256,55
+                 L 273,55 Q 280,40 288,40 Q 296,40 306,55 L 360,55
+                 L 375,55 Q 382,43 390,43 Q 398,43 405,55
+                 L 416,55 L 420,63 L 425,4 L 430,69 L 436,55
+                 L 453,55 Q 460,40 468,40 Q 476,40 486,55 L 540,55
+                 L 555,55 Q 562,43 570,43 Q 578,43 585,55
+                 L 596,55 L 600,63 L 605,4 L 610,69 L 616,55
+                 L 633,55 Q 640,40 648,40 Q 656,40 666,55 L 720,55"
+              fill="none"
+              stroke="#00e676"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </div>
+
+    </section>
+
+    
+    <section class="right-col">
+
+      
+      <div class="greeting-card">
+        <div class="greeting-avatar" aria-hidden="true">👨‍⚕️</div>
+        <div class="greeting-body">
+          <p class="greeting-hello">Hello DR. <strong>Osama</strong></p>
+          <p class="greeting-sub">you have:</p>
+          <ul class="summary-list">
+            <li>
+              <span class="summary-num summary-num--blue">100</span>
+              <span class="summary-label">monitored patients</span>
+            </li>
+            <li>
+              <span class="summary-num summary-num--red">3</span>
+              <span class="summary-label">emergency events</span>
+            </li>
+            <li>
+              <span class="summary-num summary-num--muted">0</span>
+              <span class="summary-label">notifications</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="vitals-card">
+        <p class="vitals-heading">Vital Signs Monitoring</p>
+        <div class="vitals-grid">
+
+          
+          <div class="vital pulse">
+            <span class="vital-icon" aria-hidden="true">❤️</span>
+            <p class="vital-label">Pulse (bpm)</p>
+            <p class="vital-value">60</p>
+          </div>
+
+          
+          <div class="vital bp">
+            <p class="vital-label">Blood Pressure (mmHg)</p>
+            <div class="bp-row">
+              <div class="bp-cell">
+                <p class="bp-tag">DIA</p>
+                <p class="vital-value">107</p>
+              </div>
+              <div class="bp-divider" aria-hidden="true"></div>
+              <div class="bp-cell">
+                <p class="bp-tag">SYS</p>
+                <p class="vital-value">61</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="vital temp">
+            <span class="vital-icon" aria-hidden="true">🌡️</span>
+            <p class="vital-label">Temperature (°C)</p>
+            <p class="vital-value">37.0</p>
+          </div>
+          
+          <div class="vital spo2">
+            <span class="vital-icon" aria-hidden="true">💨</span>
+            <p class="vital-label">SpO₂ (%)</p>
+            <p class="vital-value">95</p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  
+  <div class="controls-bar">
+    <button class="ctrl-btn" type="button">Load</button>
+    <button class="ctrl-btn" type="button">Save</button>
+    <button class="ctrl-btn" type="button">Pause</button>
+    <button class="ctrl-btn ctrl-btn--danger" type="button">Stop</button>
+    <button class="ctrl-btn" type="button">UDP</button>
+    <button class="ctrl-btn ctrl-btn--primary" type="button">Connect</button>
+  </div>
+
+
+  <footer class="site-footer">
+    Developed in EE Department, Faculty of Engineering, Assiut University
+  </footer>
+
+</body>
+      </html>
+  
